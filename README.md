@@ -117,31 +117,31 @@ PURPOSE  : Its an upgraded portfolio of mine totally vibecoded
 REPO     : github.com/Joshua-zlitch/Portfolio-2.0
 ```
 
-#### `[03]` [Atm-Simulation](https://github.com/Joshua-zlitch/Atm-Simulation)
+#### `[03]` [Tax-Buddy](https://github.com/Joshua-zlitch/Tax-Buddy)
 ```
 COMMITS  : 3
-LANGUAGE : C#
+LANGUAGE : JavaScript
 STATUS   : INDEXED
-PURPOSE  : A C# project based on atm simulation
+PURPOSE  : A website built by cursor , only for the purpose  of knowing the amount of tax paid and the contributions
+REPO     : github.com/Joshua-zlitch/Tax-Buddy
+```
+
+#### `[04]` [Portfolio](https://github.com/Joshua-zlitch/Portfolio)
+```
+COMMITS  : 3
+LANGUAGE : TypeScript
+STATUS   : INDEXED
+PURPOSE  : Active repository codebase.
+REPO     : github.com/Joshua-zlitch/Portfolio
+```
+
+#### `[05]` [Atm-Simulation](https://github.com/Joshua-zlitch/Atm-Simulation)
+```
+COMMITS  : 3
+LANGUAGE : Unspecified
+STATUS   : INDEXED
+PURPOSE  : A C# project based on atm simulation with
 REPO     : github.com/Joshua-zlitch/Atm-Simulation
-```
-
-#### `[04]` [AM](https://github.com/Joshua-zlitch/AM)
-```
-COMMITS  : 2
-LANGUAGE : Python
-STATUS   : INDEXED
-PURPOSE  : A rag model that recrates the character AM
-REPO     : github.com/Joshua-zlitch/AM
-```
-
-#### `[05]` [Claude-Opencode-mcp](https://github.com/Joshua-zlitch/Claude-Opencode-mcp)
-```
-COMMITS  : 1
-LANGUAGE : Python
-STATUS   : INDEXED
-PURPOSE  : It is a mcp that connects both opencode and claude and lets claude as planning agent and opencode as coding engineer
-REPO     : github.com/Joshua-zlitch/Claude-Opencode-mcp
 ```
 
 <!-- PROJECT_INDEX_END -->
