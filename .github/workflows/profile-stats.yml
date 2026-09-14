@@ -1,0 +1,55 @@
+name: ATLAS Telemetry Sync & Health Check
+
+on:
+  schedule:
+    # Run every Monday at 00:00 UTC
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+  push:
+    paths:
+      - "assets/**"
+      - "README.md"
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  telemetry-check:
+    name: Validate Profile Telemetry & Assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Validate System Assets Integrity
+        run: |
+          echo "=== ATLAS TELEMETRY SYSTEM CHECK ==="
+          echo "TIMESTAMP: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          
+          # Check essential asset presence
+          for asset in assets/atlas-header.svg assets/system-divider.svg assets/atlas-footer.svg; do
+            if [ -f "$asset" ]; then
+              size=$(wc -c < "$asset")
+              echo "[OK] Asset verified: $asset ($size bytes)"
+            else
+              echo "[ERROR] Missing critical asset: $asset"
+              exit 1
+            fi
+          done
+
+      - name: Validate README Formatting & Links
+        run: |
+          echo "Validating README integrity..."
+          test -f README.md || (echo "README.md not found" && exit 1)
+          
+          # Verify no accidental broken internal relative asset links
+          grep -q "assets/atlas-header.svg" README.md || (echo "Header link missing" && exit 1)
+          grep -q "assets/system-divider.svg" README.md || (echo "Divider link missing" && exit 1)
+          grep -q "assets/atlas-footer.svg" README.md || (echo "Footer link missing" && exit 1)
+          
+          echo "[STATUS] ATLAS profile integrity: 100% OPERATIONAL"

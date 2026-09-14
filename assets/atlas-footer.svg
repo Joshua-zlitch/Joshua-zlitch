@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 140" width="100%" height="140" fill="none">
+  <defs>
+    <style>
+      @keyframes pulseIdle {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.4; }
+      }
+      .idle-dot { animation: pulseIdle 3s infinite ease-in-out; }
+      .mono {
+        font-family: 'Monocraft', 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+      }
+    </style>
+    <pattern id="footerGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#111722" stroke-width="0.8" />
+    </pattern>
+  </defs>
+
+  <!-- Background Frame -->
+  <rect width="880" height="140" rx="6" fill="#080B10" stroke="#202938" stroke-width="1.2" />
+  <rect width="880" height="140" rx="6" fill="url(#footerGrid)" />
+
+  <!-- Corner Reticles -->
+  <path d="M 12 24 L 12 12 L 24 12" stroke="#5967A5" stroke-width="1.5" fill="none" />
+  <path d="M 868 24 L 868 12 L 856 12" stroke="#5967A5" stroke-width="1.5" fill="none" />
+  <path d="M 12 116 L 12 128 L 24 128" stroke="#5967A5" stroke-width="1.5" fill="none" />
+  <path d="M 868 116 L 868 128 L 856 128" stroke="#5967A5" stroke-width="1.5" fill="none" />
+
+  <!-- Top Status Badge -->
+  <g transform="translate(30, 22)">
+    <rect x="0" y="0" width="186" height="20" rx="3" fill="#0D1219" stroke="#202938" stroke-width="0.8" />
+    <circle cx="12" cy="10" r="3" fill="#8B9DFF" class="idle-dot" />
+    <text x="22" y="14" fill="#8B9DFF" font-size="9.5" font-weight="700" class="mono" letter-spacing="1">SESSION.TERMINATION</text>
+    <text x="152" y="14" fill="#7A8294" font-size="9" class="mono">// 0x00</text>
+  </g>
+
+  <!-- Primary Console Termination Text -->
+  <g transform="translate(30, 68)">
+    <text x="0" y="0" fill="#D8DCE7" font-size="14" font-weight="700" class="mono" letter-spacing="1.5">
+      ATLAS // STANDBY PROTOCOL ENGAGED
+    </text>
+    <text x="0" y="20" fill="#7A8294" font-size="11" class="mono" letter-spacing="0.5">
+      The telemetry stream remains open. Repository activity is continuously indexed.
+    </text>
+  </g>
+
+  <!-- Cryptographic / System Trace Block -->
+  <g transform="translate(610, 22)">
+    <rect x="0" y="0" width="240" height="66" rx="3" fill="#0D1219" stroke="#202938" stroke-width="0.8" />
+    <text x="12" y="18" fill="#5967A5" font-size="8.5" font-weight="700" class="mono" letter-spacing="1">NODE SIGNATURE</text>
+    <text x="12" y="36" fill="#7A8294" font-size="9" class="mono">HASH: 7E4A-9B2F-C810-D09A</text>
+    <text x="12" y="52" fill="#7A8294" font-size="9" class="mono">STATE: PERSISTENT OBSERVATION</text>
+  </g>
+
+  <!-- Bottom Hairline Trace & Telemetry -->
+  <line x1="30" y1="106" x2="850" y2="106" stroke="#202938" stroke-width="0.8" />
+  
+  <circle cx="34" cy="120" r="3.5" fill="#6EE7B7" class="idle-dot" />
+  <text x="46" y="123" fill="#6EE7B7" font-size="9.5" font-weight="600" class="mono" letter-spacing="1">NODE PERSISTENCE: 100%</text>
+  
+  <text x="360" y="123" fill="#7A8294" font-size="9" class="mono">BUFFER: FLUSHED</text>
+  <text x="560" y="123" fill="#7A8294" font-size="9" class="mono">PROCESSES: RESIDENT IN MEMORY</text>
+  <text x="778" y="123" fill="#8B9DFF" font-size="9.5" font-weight="700" class="mono">END TRANSMISSION</text>
+</svg>
