@@ -36,7 +36,7 @@
   <!-- Primary Console Termination Text -->
   <g transform="translate(30, 68)">
     <text x="0" y="0" fill="#D8DCE7" font-size="14" font-weight="700" class="mono" letter-spacing="1.5">
-      ATLAS // STANDBY PROTOCOL ENGAGED
+      SYSTEM // STANDBY PROTOCOL ENGAGED
     </text>
     <text x="0" y="20" fill="#7A8294" font-size="11" class="mono" letter-spacing="0.5">
       The telemetry stream remains open. Repository activity is continuously indexed.

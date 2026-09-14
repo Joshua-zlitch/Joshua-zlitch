@@ -1,4 +1,4 @@
-name: Generate ATLAS Contribution Matrix
+name: Generate Contribution Matrix
 
 on:
   schedule:
