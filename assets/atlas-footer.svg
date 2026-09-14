@@ -55,7 +55,7 @@
   <line x1="30" y1="106" x2="850" y2="106" stroke="#202938" stroke-width="0.8" />
   
   <circle cx="34" cy="120" r="3.5" fill="#6EE7B7" class="idle-dot" />
-  <text x="46" y="123" fill="#6EE7B7" font-size="9.5" font-weight="600" class="mono" letter-spacing="1">NODE PERSISTENCE: 100%</text>
+  <text x="46" y="123" fill="#6EE7B7" font-size="9.5" font-weight="600" class="mono" letter-spacing="1">NODE PERSISTENCE: ACTIVE</text>
   
   <text x="360" y="123" fill="#7A8294" font-size="9" class="mono">BUFFER: FLUSHED</text>
   <text x="560" y="123" fill="#7A8294" font-size="9" class="mono">PROCESSES: RESIDENT IN MEMORY</text>

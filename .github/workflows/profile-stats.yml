@@ -1,4 +1,4 @@
-name: ATLAS Telemetry Sync & Health Check
+name: ATLAS Telemetry Sync
 
 on:
   schedule:
@@ -6,19 +6,21 @@ on:
     - cron: "0 0 * * 1"
   workflow_dispatch:
   push:
-    paths:
-      - "assets/**"
-      - "README.md"
     branches:
       - main
-      - master
+    paths:
+      - "scripts/generate-telemetry.js"
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  telemetry-check:
-    name: Validate Profile Telemetry & Assets
+  sync-telemetry:
+    name: Fetch Real GitHub Telemetry & Update SVGs
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
@@ -26,30 +28,25 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Validate System Assets Integrity
-        run: |
-          echo "=== ATLAS TELEMETRY SYSTEM CHECK ==="
-          echo "TIMESTAMP: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-          
-          # Check essential asset presence
-          for asset in assets/atlas-header.svg assets/system-divider.svg assets/atlas-footer.svg; do
-            if [ -f "$asset" ]; then
-              size=$(wc -c < "$asset")
-              echo "[OK] Asset verified: $asset ($size bytes)"
-            else
-              echo "[ERROR] Missing critical asset: $asset"
-              exit 1
-            fi
-          done
+      - name: Setup Node.js Runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
-      - name: Validate README Formatting & Links
+      - name: Generate Verified Telemetry SVGs
+        run: node scripts/generate-telemetry.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit & Push Telemetry Changes
         run: |
-          echo "Validating README integrity..."
-          test -f README.md || (echo "README.md not found" && exit 1)
-          
-          # Verify no accidental broken internal relative asset links
-          grep -q "assets/atlas-header.svg" README.md || (echo "Header link missing" && exit 1)
-          grep -q "assets/system-divider.svg" README.md || (echo "Divider link missing" && exit 1)
-          grep -q "assets/atlas-footer.svg" README.md || (echo "Footer link missing" && exit 1)
-          
-          echo "[STATUS] ATLAS profile integrity: 100% OPERATIONAL"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/github-telemetry.svg assets/top-languages.svg
+          if git diff --staged --quiet; then
+            echo "Telemetry is already up to date. No changes to commit."
+          else
+            git commit -m "chore(telemetry): update verified GitHub statistics [skip ci]"
+            git push
+            echo "Updated telemetry SVGs committed."
+          fi

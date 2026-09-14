@@ -1,16 +1,18 @@
 # ATLAS // Asset Documentation
 
-This directory contains static and generated visual assets supporting the **ATLAS** autonomous interface system for the GitHub Profile.
+This directory contains static and generated visual assets supporting the **ATLAS** autonomous interface system for the GitHub Profile of **Benitto Joshua (`Joshua-zlitch`)**.
 
 ---
 
 ## Asset Index
 
-| Asset | Type | Purpose | Dimensions | Dependencies |
+| Asset | Type | Purpose | Dimensions | Generation / Data Source |
 | :--- | :--- | :--- | :--- | :--- |
-| `atlas-header.svg` | Scalable Vector Graphic | System boot hero header, Monocraft title, animated telemetry cycling | 880 × 230 px | None (Self-contained CSS/SVG) |
-| `system-divider.svg` | Scalable Vector Graphic | Architectural separator between console telemetry sections | 880 × 24 px | None (Self-contained) |
-| `atlas-footer.svg` | Scalable Vector Graphic | Session termination console, node signature, persistence indicator | 880 × 140 px | None (Self-contained) |
+| `atlas-header.svg` | Scalable Vector Graphic | System boot hero header, Monocraft title, animated telemetry stream | 880 × 230 px | Static SVG with CSS keyframe animation |
+| `system-divider.svg` | Scalable Vector Graphic | Architectural separator between console telemetry sections | 880 × 24 px | Static vector with precision hairline styling |
+| `atlas-footer.svg` | Scalable Vector Graphic | Session termination console, node signature, persistence indicator | 880 × 140 px | Static vector with node hash & telemetry markers |
+| `github-telemetry.svg` | Scalable Vector Graphic | Real verified repository statistics (repos, stars, followers) | 430 × 195 px | Generated via `scripts/generate-telemetry.js` |
+| `top-languages.svg` | Scalable Vector Graphic | Byte-weighted language distribution across all public repositories | 430 × 195 px | Generated via `scripts/generate-telemetry.js` |
 
 ---
 
@@ -31,28 +33,12 @@ All assets strictly adhere to the ATLAS dark console color palette:
 
 ---
 
-## Typography & GitHub CDN Compatibility
+## Regenerating Telemetry Cards
 
-1. **GitHub Camo Proxy Compatibility**:
-   GitHub's image sanitizer (`camo.githubusercontent.com`) removes external web font links (`@import` or `<link>`).
-   Assets specify a resilient font stack starting with `'Monocraft'`, followed by standard programming monospace fallbacks:
-   ```css
-   font-family: 'Monocraft', 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
-   ```
-2. **Animation**:
-   `atlas-header.svg` uses CSS keyframe animations for message cycling and terminal cursor blinking. These animations execute natively in browser SVG rendering and GitHub camo cached views without relying on JavaScript.
+To manually regenerate `github-telemetry.svg` and `top-languages.svg` with live GitHub data at any time:
 
----
+```bash
+node scripts/generate-telemetry.js
+```
 
-## Customization Guide
-
-### Updating `YOUR_NAME` in `atlas-header.svg`
-To personalize the hero header:
-1. Open `assets/atlas-header.svg`.
-2. Locate the main title element at line ~78:
-   ```xml
-   <text x="0" y="44" fill="#D8DCE7" font-size="28" font-weight="800" class="mono" letter-spacing="3">
-     ATLAS <tspan fill="#8B9DFF">//</tspan> <tspan fill="#8B9DFF">YOUR_NAME</tspan>
-   </text>
-   ```
-3. Replace `YOUR_NAME` with your actual name or callsign.
+This is also run automatically every Monday at 00:00 UTC and on push to `main` via [`.github/workflows/profile-stats.yml`](../.github/workflows/profile-stats.yml).

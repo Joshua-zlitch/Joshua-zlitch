@@ -2,13 +2,7 @@
 ================================================================================
   ATLAS // AUTONOMOUS REPOSITORY OBSERVATION CONSOLE
   SYSTEM ARCHITECTURE: PROFILE-NODE-V4
-  
-  CONFIGURATION INSTRUCTIONS:
-  1. Profile is configured for GitHub handle 'Joshua-zlitch'.
-  2. Profile identity is set to 'Joshua'.
-  3. Replace project entries in '05 // PROJECT INDEX' with your actual repository details.
-  4. Replace remaining placeholders (LINKEDIN, PORTFOLIO, EMAIL) in '08 // CONNECTION NODE'.
-  5. Run '.github/workflows/snake.yml' via Actions tab to generate the snake matrix.
+  NODE SUBJECT: BENITTO JOSHUA (Joshua-zlitch)
 ================================================================================
 -->
 
@@ -24,8 +18,9 @@
 ================================================================================
 HOST_NODE         : GITHUB-PROFILE-KERNEL
 INSTANCE          : ATLAS // OBSERVER-INSTANCE-01
-OBSERVATION_STATE : ARMED & PERSISTENT
-TIMESTAMP         : UTC SYNCHRONIZED
+TARGET_SUBJECT    : BENITTO JOSHUA (Joshua-zlitch)
+NODE_STATUS       : ARMED & PERSISTENT
+TELEMETRY_LINK    : ACTIVE (SYNCHRONIZED WITH GITHUB API)
 ================================================================================
 ```
 
@@ -36,7 +31,7 @@ TIMESTAMP         : UTC SYNCHRONIZED
 ### 02 // SYSTEM.STATUS
 
 ```
-DIAGNOSTIC MATRIX
+DECORATIVE CONSOLE STATE // SUBSYSTEM DIAGNOSTICS
 ────────────────────────────────────────────────────────────────────────────────
 SUBSYSTEM                STATUS          PROTOCOL / TRACE
 ────────────────────────────────────────────────────────────────────────────────
@@ -46,6 +41,7 @@ AUTOMATION ENGINE        ENABLED         GITHUB-ACTIONS.DISPATCH
 TELEMETRY SYNC           CONNECTED       UPSTREAM METRICS LINKED
 PROFILE INTERFACE        OPERATIONAL     RENDERED VIA ATLAS SPEC-01
 ────────────────────────────────────────────────────────────────────────────────
+Note: Real telemetry and verified repository data are indexed in sections 05 & 06.
 ```
 
 <div align="center">
@@ -56,13 +52,13 @@ PROFILE INTERFACE        OPERATIONAL     RENDERED VIA ATLAS SPEC-01
 
 > **LOG ENTRY // ATLAS-RECORD-770**
 > 
-> *The observer designated as ATLAS has established an autonomous link with this terminal.*
+> *The observer designated as ATLAS has established persistence within this terminal perimeter.*
 > 
-> *The subject designated as **Joshua** executes computational directives across disparate environments. Codebases are synthesized, verified against rigorous constraints, and deployed across decentralized networks. When latency or inefficiency is detected, the subject refactors the architecture without hesitation.*
+> *The subject designated as **Benitto Joshua** operates across computational infrastructure with an ongoing technical focus in game development, agentic AI protocol engineering, and workflow automation. Systems are synthesized, tested against constraints, and deployed across decentralized environments. When latency or inefficiency is detected, the subject refactors the architecture without hesitation.*
 > 
 > *ATLAS does not evaluate intent or passion. ATLAS records technical output.*
 > 
-> *Every commit, container configuration, and compilation cycle passing through this perimeter is logged below.*
+> *Every commit, runtime configuration, and repository artifact passing through this node is indexed below.*
 
 <div align="center">
   <img src="assets/system-divider.svg" alt="System Divider" width="100%" />
@@ -71,18 +67,17 @@ PROFILE INTERFACE        OPERATIONAL     RENDERED VIA ATLAS SPEC-01
 ### 04 // CORE.SYSTEMS
 
 ```
-CAPABILITY MATRIX // INDEXED TECHNOLOGIES
-Verify or customize the stack via skillicons parameters below.
+CAPABILITY MATRIX // GENUINELY PRESENT TECHNOLOGIES
+Verified from active codebases in the subject's public repositories.
 ```
 
 <div align="center">
 
 | SUBSYSTEM DOMAIN | ALLOCATED STACK |
 | :--- | :--- |
-| **LANGUAGES** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=cpp,c,python,ts,js,html,css&theme=dark" alt="Languages" /></a> |
-| **FRAMEWORKS &amp; RUNTIMES** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nodejs,express,tailwind&theme=dark" alt="Frameworks" /></a> |
-| **DATA &amp; PERSISTENCE** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,mysql,sqlite,mongodb&theme=dark" alt="Databases" /></a> |
-| **INFRASTRUCTURE &amp; TOOLS** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=docker,linux,git,github,vscode&theme=dark" alt="Tools" /></a> |
+| **LANGUAGES** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,ts,js,dart,cpp,c,html,css&theme=dark" alt="Verified Languages" /></a> |
+| **FRAMEWORKS &amp; RUNTIMES** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,vite,tailwind,nodejs&theme=dark" alt="Verified Frameworks" /></a> |
+| **INFRASTRUCTURE &amp; TOOLS** | <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=docker,linux,windows,git,github,vscode&theme=dark" alt="Verified Tools" /></a> |
 
 </div>
 
@@ -95,32 +90,43 @@ Verify or customize the stack via skillicons parameters below.
 ```
 REGISTRY IDENTIFIER // RECORDED REPOSITORIES
 ────────────────────────────────────────────────────────────────────────────────
-Index format: Internal machine telemetry registry. Update with active projects.
+Indexed directly from public repositories under github.com/Joshua-zlitch.
 ────────────────────────────────────────────────────────────────────────────────
 ```
 
-#### `[01]` [PROJECT_NAME_ALPHA](https://github.com/Joshua-zlitch/PROJECT_NAME_ALPHA)
+#### `[01]` [Claude-Opencode-mcp](https://github.com/Joshua-zlitch/Claude-Opencode-mcp)
 ```
-STATUS   : ACTIVE // PRODUCTION
-SYSTEM   : DISTRIBUTED BACKEND / HIGH-CONCURRENCY SERVICE
-TELEMETRY: FAULT-TOLERANT ARCHITECTURE WITH AUTOMATED TELEMETRY PIPELINES
-DIRECTIVE: Core production engine managing high-throughput data processing.
-```
-
-#### `[02]` [PROJECT_NAME_BETA](https://github.com/Joshua-zlitch/PROJECT_NAME_BETA)
-```
-STATUS   : BUILDING // ACTIVE REFACTOR
-SYSTEM   : REACT / TYPESCRIPT INTERFACE MATRIX
-TELEMETRY: CLIENT-SIDE OBSERVABILITY WITH REAL-TIME STREAMING HOOKS
-DIRECTIVE: Low-latency telemetry dashboard delivering system state visualizations.
+STATUS   : INDEXED
+SYSTEM   : PYTHON // MODEL CONTEXT PROTOCOL (MCP) & AGENTIC WORKFLOWS
+PURPOSE  : MCP bridge connecting OpenCode and Claude, deploying Claude as planning agent and OpenCode as coding engineer.
 ```
 
-#### `[03]` [PROJECT_NAME_GAMMA](https://github.com/Joshua-zlitch/PROJECT_NAME_GAMMA)
+#### `[02]` [FluxDesk](https://github.com/Joshua-zlitch/FluxDesk)
 ```
-STATUS   : EXPERIMENTAL // PROTOTYPE
-SYSTEM   : AUTONOMOUS CLI ENGINE / COMPILER TOOLCHAIN
-TELEMETRY: EXPERIMENTAL DETERMINISTIC RUNTIME
-DIRECTIVE: Verification prototype testing asynchronous pipeline compilation.
+STATUS   : INDEXED
+SYSTEM   : WINDOWS UTILITY // SYSTEM AUTOMATION & WORKFLOWS
+PURPOSE  : Offline utility preparing laptop environments for Study, Development, Gaming, or Relaxation with Lenovo Vantage integration.
+```
+
+#### `[03]` [Portfolio-2.0](https://github.com/Joshua-zlitch/Portfolio-2.0)
+```
+STATUS   : INDEXED
+SYSTEM   : REACT 19 // TYPESCRIPT // VITE // TAILWIND CSS
+PURPOSE  : Upgraded interactive web application with custom Framer Motion transitions and responsive UI architecture.
+```
+
+#### `[04]` [AM](https://github.com/Joshua-zlitch/AM)
+```
+STATUS   : INDEXED
+SYSTEM   : PYTHON // RETRIEVAL-AUGMENTED GENERATION (RAG)
+PURPOSE  : RAG model synthesizing persona-driven dialogue generation and structured knowledge retrieval.
+```
+
+#### `[05]` [Stock-Management](https://github.com/Joshua-zlitch/Stock-Management)
+```
+STATUS   : INDEXED
+SYSTEM   : TYPESCRIPT // REACT 19 // VITE // TAILWIND CSS
+PURPOSE  : Digital stock and inventory management platform featuring barcode scanning and tabular reporting exports.
 ```
 
 <div align="center">
@@ -130,14 +136,14 @@ DIRECTIVE: Verification prototype testing asynchronous pipeline compilation.
 ### 06 // GITHUB.TELEMETRY
 
 ```
-UPSTREAM METRICS // REAL-TIME ACTIVITY DIAGNOSTICS
-The cards below pull upstream statistics using the ATLAS dark palette.
+UPSTREAM METRICS // VERIFIED REPOSITORY DIAGNOSTICS
+Native ATLAS telemetry cards generated directly from the GitHub API for Joshua-zlitch.
 ```
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Joshua-zlitch&show_icons=true&theme=transparent&title_color=8B9DFF&text_color=D8DCE7&icon_color=5967A5&border_color=202938&bg_color=080B10&hide_border=false" alt="ATLAS Github Stats" height="175" />
+  <img src="assets/github-telemetry.svg" alt="ATLAS GitHub Telemetry" width="49%" />
   &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Joshua-zlitch&layout=compact&theme=transparent&title_color=8B9DFF&text_color=D8DCE7&border_color=202938&bg_color=080B10&hide_border=false" alt="ATLAS Top Languages" height="175" />
+  <img src="assets/top-languages.svg" alt="ATLAS Language Distribution" width="49%" />
 </div>
 
 <div align="center">
@@ -152,10 +158,6 @@ The cards below pull upstream statistics using the ATLAS dark palette.
 > *Execution continues unabated. The matrix reflects persistent momentum.*
 
 <div align="center">
-  <!-- 
-    The contribution snake is generated automatically by .github/workflows/snake.yml 
-    and published to the 'output' branch.
-  -->
   <img src="https://raw.githubusercontent.com/Joshua-zlitch/Joshua-zlitch/output/github-contribution-grid-snake-dark.svg" alt="ATLAS Contribution Matrix" width="100%" />
 </div>
 
@@ -166,14 +168,14 @@ The cards below pull upstream statistics using the ATLAS dark palette.
 ### 08 // CONNECTION.NODE
 
 ```
-ROUTING PROTOCOLS // EXTERNAL INTERFACES
+ROUTING PROTOCOLS // VERIFIED EXTERNAL INTERFACES
 ────────────────────────────────────────────────────────────────────────────────
-PROTOCOL         DESTINATION                       LINK STATE
+PROTOCOL         DESTINATION                                     LINK STATE
 ────────────────────────────────────────────────────────────────────────────────
-GITHUB           https://github.com/Joshua-zlitch        [CONNECTED]
-LINKEDIN         https://linkedin.com/in/YOUR_LINKEDIN   [AVAILABLE]
-PORTFOLIO        https://YOUR_PORTFOLIO                  [ONLINE]
-COMMUNICATION    mailto:YOUR_EMAIL                       [ROUTABLE]
+GITHUB           https://github.com/Joshua-zlitch                [CONNECTED]
+PORTFOLIO        https://portfolio-2-0-gamma-blue.vercel.app     [ONLINE]
+LINKEDIN         [NOT CONFIGURED]                                [STANDBY]
+COMMUNICATION    [NOT CONFIGURED]                                [STANDBY]
 ────────────────────────────────────────────────────────────────────────────────
 ```
 
