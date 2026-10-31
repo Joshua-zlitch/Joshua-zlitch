@@ -117,7 +117,16 @@ PURPOSE  : Its an upgraded portfolio of mine totally vibecoded
 REPO     : github.com/Joshua-zlitch/Portfolio-2.0
 ```
 
-#### `[03]` [Tax-Buddy](https://github.com/Joshua-zlitch/Tax-Buddy)
+#### `[03]` [Project-Tartarus](https://github.com/Joshua-zlitch/Project-Tartarus)
+```
+COMMITS  : 3
+LANGUAGE : TypeScript
+STATUS   : INDEXED
+PURPOSE  : AI Playground
+REPO     : github.com/Joshua-zlitch/Project-Tartarus
+```
+
+#### `[04]` [Tax-Buddy](https://github.com/Joshua-zlitch/Tax-Buddy)
 ```
 COMMITS  : 3
 LANGUAGE : JavaScript
@@ -126,22 +135,13 @@ PURPOSE  : A website built by cursor , only for the purpose  of knowing the amou
 REPO     : github.com/Joshua-zlitch/Tax-Buddy
 ```
 
-#### `[04]` [Portfolio](https://github.com/Joshua-zlitch/Portfolio)
+#### `[05]` [Portfolio](https://github.com/Joshua-zlitch/Portfolio)
 ```
 COMMITS  : 3
 LANGUAGE : TypeScript
 STATUS   : INDEXED
 PURPOSE  : Active repository codebase.
 REPO     : github.com/Joshua-zlitch/Portfolio
-```
-
-#### `[05]` [Atm-Simulation](https://github.com/Joshua-zlitch/Atm-Simulation)
-```
-COMMITS  : 3
-LANGUAGE : Unspecified
-STATUS   : INDEXED
-PURPOSE  : A C# project based on atm simulation with
-REPO     : github.com/Joshua-zlitch/Atm-Simulation
 ```
 
 <!-- PROJECT_INDEX_END -->
