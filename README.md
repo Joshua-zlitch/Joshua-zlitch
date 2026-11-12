@@ -108,7 +108,16 @@ PURPOSE  : ANNEX - AI-powered Media & Information Literacy platform
 REPO     : github.com/Joshua-zlitch/Annex
 ```
 
-#### `[02]` [Portfolio-2.0](https://github.com/Joshua-zlitch/Portfolio-2.0)
+#### `[02]` [Atlas-Remake](https://github.com/Joshua-zlitch/Atlas-Remake)
+```
+COMMITS  : 17
+LANGUAGE : TypeScript
+STATUS   : INDEXED
+PURPOSE  : An AI companion that works with you just like Jarvis and Tars
+REPO     : github.com/Joshua-zlitch/Atlas-Remake
+```
+
+#### `[03]` [Portfolio-2.0](https://github.com/Joshua-zlitch/Portfolio-2.0)
 ```
 COMMITS  : 14
 LANGUAGE : TypeScript
@@ -117,7 +126,7 @@ PURPOSE  : Its an upgraded portfolio of mine totally vibecoded
 REPO     : github.com/Joshua-zlitch/Portfolio-2.0
 ```
 
-#### `[03]` [Project-Tartarus](https://github.com/Joshua-zlitch/Project-Tartarus)
+#### `[04]` [Project-Tartarus](https://github.com/Joshua-zlitch/Project-Tartarus)
 ```
 COMMITS  : 3
 LANGUAGE : TypeScript
@@ -126,22 +135,13 @@ PURPOSE  : AI Playground
 REPO     : github.com/Joshua-zlitch/Project-Tartarus
 ```
 
-#### `[04]` [Tax-Buddy](https://github.com/Joshua-zlitch/Tax-Buddy)
+#### `[05]` [Tax-Buddy](https://github.com/Joshua-zlitch/Tax-Buddy)
 ```
 COMMITS  : 3
 LANGUAGE : JavaScript
 STATUS   : INDEXED
 PURPOSE  : A website built by cursor , only for the purpose  of knowing the amount of tax paid and the contributions
 REPO     : github.com/Joshua-zlitch/Tax-Buddy
-```
-
-#### `[05]` [Portfolio](https://github.com/Joshua-zlitch/Portfolio)
-```
-COMMITS  : 3
-LANGUAGE : TypeScript
-STATUS   : INDEXED
-PURPOSE  : Active repository codebase.
-REPO     : github.com/Joshua-zlitch/Portfolio
 ```
 
 <!-- PROJECT_INDEX_END -->
